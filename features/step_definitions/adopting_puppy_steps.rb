@@ -5,8 +5,20 @@ Given(/^I am on the puppy adoption site$/) do
   @browser.goto "http://puppies.herokuapp.com" # Write code here that turns the phrase above into concrete actions
 end
 
-When(/^I click the View Details button$/) do
-  @browser.button(:value => 'View Details').click # Write code here that turns the phrase above into concrete actions
+When(/^I click the first View Details button$/) do
+  @browser.button(:value => 'View Details', :index => num - 1).click # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I click the Adopt Me button$/) do
+  @browser.button(:value => 'Adopt Me!').click # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I click the Adopt Another Puppy button$/) do
+  @browser.button(:value => 'Adopt Another Puppy').click # Write code here that turns the phrase above into concrete actions
+end
+
+When(/^I click the second View Details button$/) do
+  @browser.button(:value => 'View Details', :index => num - 2).click # Write code here that turns the phrase above into concrete actions
 end
 
 When(/^I click the Adopt Me button$/) do
