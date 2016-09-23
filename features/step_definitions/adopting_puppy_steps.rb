@@ -6,7 +6,7 @@ Given(/^I am on the puppy adoption site$/) do
 end
 
 When(/^I click the View Details button$/) do
-  @browser.button(:value => 'View Details', index => 0).click # Write code here that turns the phrase above into concrete actions
+  @browser.button(:value => 'View Details').click # Write code here that turns the phrase above into concrete actions
 end
 
 When(/^I click the Adopt Me button$/) do
@@ -18,7 +18,7 @@ When(/^I click the Complete the Adoption button$/) do
 end
 
 When(/^I enter "([^"]*)" in the name field$/) do |name|
-  @broswer.text_field(:id => "order_name").set(name)# Write code here that turns the phrase above into concrete actions
+  @browser.text_field(:id => "order_name").set(name)# Write code here that turns the phrase above into concrete actions
 end
 
 When(/^I enter "([^"]*)" in the address field$/) do |address|
