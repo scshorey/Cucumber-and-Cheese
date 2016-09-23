@@ -6,22 +6,10 @@ Given(/^I am on the puppy adoption site$/) do
 end
 
 When(/^I click the first View Details button$/) do
-  @browser.button(:value => 'View Details', :index => 0).click # Write code here that turns the phrase above into concrete actions
+  @browser.button(:value => 'View Details').click # Write code here that turns the phrase above into concrete actions
 end
 
-When(/^I click the first Adopt Me button$/) do
-  @browser.button(:value => 'Adopt Me!').click # Write code here that turns the phrase above into concrete actions
-end
-
-When(/^I click the Adopt Another Puppy button$/) do
-  @browser.button(:value => 'Adopt Another Puppy').click # Write code here that turns the phrase above into concrete actions
-end
-
-When(/^I click the second View Details button$/) do
-  @browser.button(:value => 'View Details', :index => 1).click # Write code here that turns the phrase above into concrete actions
-end
-
-When(/^I click the second Adopt Me button$/) do
+When(/^I click the Adopt Me button$/) do
   @browser.button(:value => 'Adopt Me!').click # Write code here that turns the phrase above into concrete actions
 end
 
